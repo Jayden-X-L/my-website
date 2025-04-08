@@ -87,6 +87,31 @@
             color: white;
             font-size: 24px;
         }
+        #direction-controls {
+            position: relative;
+            width: 120px;
+            height: 120px;
+        }
+        #up {
+            position: absolute;
+            top: 0;
+            left: 30px;
+        }
+        #down {
+            position: absolute;
+            bottom: 0;
+            left: 30px;
+        }
+        #left {
+            position: absolute;
+            top: 30px;
+            left: 0;
+        }
+        #right {
+            position: absolute;
+            top: 30px;
+            right: 0;
+        }
     </style>
 </head>
 <body>
@@ -96,12 +121,14 @@
         <div id="gameOver">游戏结束</div>
         <button id="restart">重新开始</button>
         <div id="controls">
-            <div class="control-btn" id="left">←</div>
-            <div class="control-btn" id="up">↑</div>
-            <div class="control-btn" id="down">↓</div>
-            <div class="control-btn" id="right">→</div>
+            <div id="direction-controls">
+                <div class="control-btn" id="up">↑</div>
+                <div class="control-btn" id="down">↓</div>
+                <div class="control-btn" id="left">←</div>
+                <div class="control-btn" id="right">→</div>
+            </div>
+            <div id="shoot">○</div>
         </div>
-        <div id="shoot">○</div>
     </div>
 
     <script>
